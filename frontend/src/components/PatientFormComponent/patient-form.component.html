@@ -1,0 +1,14 @@
+<form [formGroup]="patientForm" (ngSubmit)="onSubmit()">
+    <h2>Create Patient</h2>
+    <div>
+      <label for="name">Name:</label>
+      <input type="text" id="name" formControlName="name" required>
+    </div>
+    <div>
+      <label for="age">Age:</label>
+      <input type="number" id="age" formControlName="age" required>
+    </div>
+    <!-- Add more form fields as needed -->
+    <button type="submit">Create</button>
+  </form>
+  

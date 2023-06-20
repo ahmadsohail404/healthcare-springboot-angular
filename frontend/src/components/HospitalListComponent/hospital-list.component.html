@@ -1,0 +1,9 @@
+<div *ngIf="hospitals">
+    <h2>Hospital List</h2>
+    <ul>
+      <li *ngFor="let hospital of hospitals">
+        {{ hospital.name }}
+      </li>
+    </ul>
+  </div>
+  

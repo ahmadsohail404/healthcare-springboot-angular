@@ -1,0 +1,14 @@
+<form [formGroup]="doctorForm" (ngSubmit)="onSubmit()">
+    <h2>Create Doctor</h2>
+    <div>
+      <label for="name">Name:</label>
+      <input type="text" id="name" formControlName="name" required>
+    </div>
+    <div>
+      <label for="specialization">Specialization:</label>
+      <input type="text" id="specialization" formControlName="specialization" required>
+    </div>
+    <!-- Add more form fields as needed -->
+    <button type="submit">Create</button>
+  </form>
+  
